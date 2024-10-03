@@ -1,0 +1,185 @@
+:root {
+    --Brand-Color: #9BF00B;
+    --Dark-10: #0C0C0C;
+    --Dark-20: #777777;
+    --Dark-30: #C0C0C0;
+    --White: #FFFFFF;
+    --Transparent: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--Dark-10);
+    color: var(--White);
+}
+
+span {
+    color: var(--Brand-Color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .links {
+        a {
+            margin: 0 .5rem;
+
+        }
+    }
+
+    a {
+        color: var(--White);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    a:nth-of-type(1) {
+        background-color: var(--Dark-20);
+        border-radius: 30px;
+        padding: 5px 1rem;
+    }
+
+    .disponibility {
+        a {
+            background-color: var(--Brand-Color);
+            color: var(--Dark-10);
+            border-radius: 2px;
+            padding: .5rem 1.2rem;
+            cursor: pointer;
+
+        }
+    }
+
+}
+
+.home {
+    margin-top: 5rem;
+
+    .mainTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h4 {
+            margin-top: 1rem;
+            color: var(--Brand-Color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+
+    .xboxImg {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 79%;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+
+    .productDescription {
+        margin: 7rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+
+
+        img {
+            width: 25%;
+        }
+
+    }
+
+    .description {
+        width: 35%;
+        flex-direction: column;
+
+        .descriptionTitle {
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                width: 50%;
+                font-size: 42px;
+                letter-spacing: 2px;
+                font-weight: normal;
+            }
+
+            p {
+                margin-top: 15px;
+                color: var(--Dark-30);
+            }
+        }
+
+    }
+
+}
+
+.games {
+    width: 100% !important;
+    display: flex;
+
+    .imgs {
+        img {
+            height: 32.5rem;
+        }
+    }
+}
+
+.faq {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    h1 {
+        font-size: 36px;
+    }
+
+    details {
+        background-color: var(--Transparent);
+    }
+}
+
+footer {
+    margin-top: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .infos {
+        display: flex;
+
+        p {
+            margin: 1rem;
+            color: var(--Dark-20);
+        }
+    }
+
+}
