@@ -33,7 +33,7 @@ nav {
 
     .links {
         a {
-            margin: 0 .5rem;
+            margin: 0 1rem;
 
         }
     }
@@ -150,19 +150,50 @@ nav {
 }
 
 .faq {
+    width: 100% !important;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
 
     h1 {
         font-size: 36px;
     }
 
-    details {
-        background-color: var(--Transparent);
+    .questions{
+        margin-top: 2rem;
+    }
+
+    .question{
+        display: flex;
+        padding: 1.5rem;
+        
+        details{
+            width: 100%;
+            cursor: pointer;
+
+            p{
+                margin-top: 2rem;
+                color: var(--Dark-20);
+            }
+        }
+
+        details::after{
+            content: '';
+            display: block; /* Faz a linha ocupar espaço */
+            height: 1px; /* Espessura da linha */
+            background-color: var(--Dark-20); /* Cor da linha */
+            margin-top: 1.3rem; /* Espaçamento acima da linha */
+        }
+
+        summary{
+            font-size: 1.2rem;
+            
+            span{
+                color: var(--White);
+            }
+        }
     }
 }
 
